@@ -12,6 +12,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
+// asserts the equality of two arrays
 const assertArraysEqual = function(actual, expected) {
   let returnText;
   if (eqArrays(actual,expected)) {
