@@ -1,11 +1,14 @@
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
+
+const eqArrays = require('./eqArrays');
+
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length === Object.keys(object2).length) {
     const needToMatch = Object.keys(object1).length;
     let matchcount = 0;
-    for (objectKey1 in object1) {
-      for (objectKey2 in object2) {
+    for (let objectKey1 in object1) {
+      for (let objectKey2 in object2) {
         console.log('objectKey1 :', objectKey1);
         console.log('object1 :', object1);
         console.log('objectKey2 :', objectKey2);
