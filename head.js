@@ -1,7 +1,5 @@
 // head.js function
 
-const assertEqual = require('./assertEqual');
-
 // returns the first value or head of an array
 const head = function(array) {
   let test = array[0];

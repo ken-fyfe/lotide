@@ -4,6 +4,8 @@
 const tail = function(array) {
   let returnArray = [];
   if (array === []) {
+    return [];
+  } else {
     let test = array[0];
     if (test === undefined) {
       return undefined;
@@ -13,6 +15,7 @@ const tail = function(array) {
       }
     }
   }
+  console.log('inside tail.js: ', returnArray);
   return returnArray;
 };
 
